@@ -1,6 +1,7 @@
 // Caesar Cipher - Scala (functional)
 // Author: John Paul Welsh
 object Cipher {
+    
     def encrypt(inputStr, maxShiftVal): String {
         return "null"
     }
@@ -13,12 +14,10 @@ object Cipher {
         println("null")
     }
 
-
-
     def main(args: Array[String]) {
-        val inputStr = "John Paul Welsh".toUpperCase()
-        val shiftAmt = 30
-        val maxShiftVal = 15
+        val inputStr = "abcdefghijklmnopqrstuvwxyz".toUpperCase()
+        val shiftAmt = 5
+        val maxShiftVal = 26
 
         println("The input string is " + inputStr)
         println("The shift amount for encrypt and decrypt is " + shiftAmt)
