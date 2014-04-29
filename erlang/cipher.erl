@@ -1,9 +1,9 @@
-InputList = string:to_upper("abcxyz").
+InputString = "JOHN PAUL WELSH".
 ShiftAmt = 3.
 MaxShift = 26.
     
-shift({ShiftAmt, Num}) ->
+shift({Num, ShiftAmt}) ->
     Num + ShiftAmt.
 
-mapShift({ShiftAmt, InputList}) ->
+mapShift({InputList, ShiftAmt}) ->
     [shift({ShiftAmt, Num}) || Num <- InputList].

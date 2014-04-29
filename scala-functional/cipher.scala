@@ -2,28 +2,43 @@
 // Author: John Paul Welsh
 object Cipher {
     
-    def encrypt(inputStr, maxShiftVal): String {
-        return "null"
+  def encrypt(input: List[Char], shiftAmt: Int): List[Char] = {
+            
+    def shiftWithBounds(num: Int, amt: Int): Int = {
+    val temp = num + amt
+    if (num == 32)      num
+    else if (temp < 65) 91 - (65 % temp)
+    else if (temp > 90) 64 + (temp % 90)
+    else                temp
     }
 
-    def decrypt(inputStr, shiftAmt): String {
-        return "null"
-    }
+    val inputInts = input.map(c => c.asInstanceOf[Int])
+    val shiftedInts = inputInts.map(n => shiftWithBounds(n, shiftAmt))
+    val backToChar = shiftedInts.map(n => n.asInstanceOf[Char])
 
-    def solve(inputStr, maxShiftVal): Unit {
-        println("null")
-    }
+    backToChar
+  }
 
-    def main(args: Array[String]) {
-        val inputStr = "abcdefghijklmnopqrstuvwxyz".toUpperCase()
-        val shiftAmt = 5
-        val maxShiftVal = 26
+  def decrypt(input: List[Char], shiftAmt: Int): List[Char] =
+    encrypt(input, -shiftAmt)
 
-        println("The input string is " + inputStr)
-        println("The shift amount for encrypt and decrypt is " + shiftAmt)
-        println("The maximum shift value for solve is " + maxShiftVal)
-        println("Encrypted: " + encrypt(inputStr, shiftAmt))
-        println("Decrypted: " + decrypt(inputStr, shiftAmt))
-        solve(inputStr, maxShiftVal)
+  def solve(input: List[Char], amt: Int): Unit = {
+    if (amt >= 0) {
+      println("Solve " + amt + ": " + decrypt(input, amt % 26).mkString)
+      solve(input, amt - 1)
     }
+  }
+
+  def main(args: Array[String]) {
+    val input = "John Paul Welsh".toUpperCase
+    val shiftAmt = 15
+    val maxShiftVal = 26
+
+    println("The input string is " + input)
+    println("The shift amount for encrypt and decrypt is " + shiftAmt)
+    println("The maximum shift value for solve is " + maxShiftVal)
+    println("Encrypted: " + encrypt(input.toList, shiftAmt % 26).mkString)
+    println("Decrypted: " + decrypt(input.toList, shiftAmt % 26).mkString)
+    solve(input.toList, maxShiftVal)
+  }
 }

@@ -1,1 +1,110 @@
-ml-output.txt
+Standard ML of New Jersey v110.74 [built: Fri Jan 24 17:53:58 2014]
+- val inputList =
+  [#"J",#"O",#"H",#"N",#" ",#"P",#"A",#"U",#"L",#" ",#"W",#"E",...]
+  : char list
+val shiftAmt = 13 : int
+val maxShift = 26 : int
+val charToInt = fn : char -> int
+val intToChar = fn : int -> char
+val lowerBoundChange = fn : int -> int
+val upperBoundChange = fn : int -> int
+val checkShift = fn : int -> int
+val shift = fn : int * int -> int
+val map = fn : ('a -> 'b) * 'a list -> 'b list
+val mapShift = fn : int * int list -> int list
+val encrypt = fn : char list * int -> string
+val decrypt = fn : char list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[autoloading done]
+val solve = fn : int * char list -> 'a list
+The input string is : JOHN PAUL WELSH  val it = () : unit
+The shift amount for encrypt and decrypt is : 13  val it = () : unit
+The max shift amount for solve is : 26  val it = () : unit
+Encrypted: WBUA CNHY JRYFU  val it = () : unit
+Decrypted: WBUA CNHY JRYFU  val it = () : unit
+stdIn:49.1-49.27 Warning: type vars not generalized because of
+   value restriction are instantiated to dummy types (X1,X2,...)
+Solve 26: JOHN PAUL WELSH
+Solve 25: KPIO QBVM XFMTI
+Solve 24: LQJP RCWN YGNUJ
+Solve 23: MRKQ SDXO ZHOVK
+Solve 22: NSLR TEYP AIPWL
+Solve 21: OTMS UFZQ BJQXM
+Solve 20: PUNT VGAR CKRYN
+Solve 19: QVOU WHBS DLSZO
+Solve 18: RWPV XICT EMTAP
+Solve 17: SXQW YJDU FNUBQ
+Solve 16: TYRX ZKEV GOVCR
+Solve 15: UZSY ALFW HPWDS
+Solve 14: VATZ BMGX IQXET
+Solve 13: WBUA CNHY JRYFU
+Solve 12: XCVB DOIZ KSZGV
+Solve 11: YDWC EPJA LTAHW
+Solve 10: ZEXD FQKB MUBIX
+Solve 9: AFYE GRLC NVCJY
+Solve 8: BGZF HSMD OWDKZ
+Solve 7: CHAG ITNE PXELA
+Solve 6: DIBH JUOF QYFMB
+Solve 5: EJCI KVPG RZGNC
+Solve 4: FKDJ LWQH SAHOD
+Solve 3: GLEK MXRI TBIPE
+Solve 2: HMFL NYSJ UCJQF
+Solve 1: INGM OZTK VDKRG
+Solve 0: JOHN PAUL WELSH
+val it = [] : ?.X1 list
+- 
+
+
+
+========================================================
+
+
+Standard ML of New Jersey v110.74 [built: Fri Jan 24 17:53:58 2014]
+- val inputList =
+  [#"J",#"O",#"H",#"N",#" ",#"P",#"A",#"U",#"L",#" ",#"W",#"E",...]
+  : char list
+val shiftAmt = 8 : int
+val maxShift = 18 : int
+val charToInt = fn : char -> int
+val intToChar = fn : int -> char
+val lowerBoundChange = fn : int -> int
+val upperBoundChange = fn : int -> int
+val checkShift = fn : int -> int
+val shift = fn : int * int -> int
+val map = fn : ('a -> 'b) * 'a list -> 'b list
+val mapShift = fn : int * int list -> int list
+val encrypt = fn : char list * int -> string
+val decrypt = fn : char list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[autoloading done]
+val solve = fn : int * char list -> 'a list
+The input string is : JOHN PAUL WELSH  val it = () : unit
+The shift amount for encrypt and decrypt is : 8  val it = () : unit
+The max shift amount for solve is : 18  val it = () : unit
+Encrypted: RWPV XICT EMTAP  val it = () : unit
+Decrypted: BGZF HSMD OWDKZ  val it = () : unit
+stdIn:49.1-49.27 Warning: type vars not generalized because of
+   value restriction are instantiated to dummy types (X1,X2,...)
+Solve 18: RWPV XICT EMTAP
+Solve 17: SXQW YJDU FNUBQ
+Solve 16: TYRX ZKEV GOVCR
+Solve 15: UZSY ALFW HPWDS
+Solve 14: VATZ BMGX IQXET
+Solve 13: WBUA CNHY JRYFU
+Solve 12: XCVB DOIZ KSZGV
+Solve 11: YDWC EPJA LTAHW
+Solve 10: ZEXD FQKB MUBIX
+Solve 9: AFYE GRLC NVCJY
+Solve 8: BGZF HSMD OWDKZ
+Solve 7: CHAG ITNE PXELA
+Solve 6: DIBH JUOF QYFMB
+Solve 5: EJCI KVPG RZGNC
+Solve 4: FKDJ LWQH SAHOD
+Solve 3: GLEK MXRI TBIPE
+Solve 2: HMFL NYSJ UCJQF
+Solve 1: INGM OZTK VDKRG
+Solve 0: JOHN PAUL WELSH
+val it = [] : ?.X1 list
+- 
