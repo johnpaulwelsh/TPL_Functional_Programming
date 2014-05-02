@@ -31,7 +31,7 @@ fun mapShift(amt, ls) =
 (* Turn all the chars into ints, shift them, and turn them back to an
     imploded list of chars *)
 fun encrypt(ls, amt) =
-    implode(map(intToChar,mapShift(amt, map(charToInt, ls))));
+    implode(map(intToChar, mapShift(amt, map(charToInt, ls))));
 
 fun decrypt(ls, amt) = encrypt(ls, ~amt);
 

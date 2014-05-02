@@ -5,11 +5,11 @@ object Cipher {
   def encrypt(input: List[Char], shiftAmt: Int): List[Char] = {
             
     def shiftWithBounds(num: Int, amt: Int): Int = {
-    val temp = num + amt
-    if (num == 32)      num
-    else if (temp < 65) 91 - (65 % temp)
-    else if (temp > 90) 64 + (temp % 90)
-    else                temp
+      val temp = num + amt
+      if (num == 32)      num
+      else if (temp < 65) 91 - (65 % temp)
+      else if (temp > 90) 64 + (temp % 90)
+      else                temp
     }
 
     val inputInts = input.map(c => c.asInstanceOf[Int])
