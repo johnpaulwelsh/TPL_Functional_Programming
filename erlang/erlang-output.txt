@@ -1,1 +1,56 @@
-erlang-output.txt
+The input string is JOHN PAUL WELSH
+The shift amount for encrypt and decrypt is 1
+The maximum shift amount for solve is 15
+Encrypted: KPIO QBVM XFMTI
+Decrypted: INGM OZTK VDKRG
+Solve 15: UZSY ALFW HPWDS
+Solve 14: VATZ BMGX IQXET
+Solve 13: WBUA CNHY JRYFU
+Solve 12: XCVB DOIZ KSZGV
+Solve 11: YDWC EPJA LTAHW
+Solve 10: ZEXD FQKB MUBIX
+Solve 9: AFYE GRLC NVCJY
+Solve 8: BGZF HSMD OWDKZ
+Solve 7: CHAG ITNE PXELA
+Solve 6: DIBH JUOF QYFMB
+Solve 5: EJCI KVPG RZGNC
+Solve 4: FKDJ LWQH SAHOD
+Solve 3: GLEK MXRI TBIPE
+Solve 2: HMFL NYSJ UCJQF
+Solve 1: INGM OZTK VDKRG
+Solve 0: JOHN PAUL WELSH
+
+===================================================
+
+The input string is JOHN PAUL WELSH
+The shift amount for encrypt and decrypt is 18
+The maximum shift amount for solve is 26
+Encrypted: BGZF HSMD OWDKZ
+Decrypted: RWPV XICT EMTAP
+Solve 26: JOHN PAUL WELSH
+Solve 25: KPIO QBVM XFMTI
+Solve 24: LQJP RCWN YGNUJ
+Solve 23: MRKQ SDXO ZHOVK
+Solve 22: NSLR TEYP AIPWL
+Solve 21: OTMS UFZQ BJQXM
+Solve 20: PUNT VGAR CKRYN
+Solve 19: QVOU WHBS DLSZO
+Solve 18: RWPV XICT EMTAP
+Solve 17: SXQW YJDU FNUBQ
+Solve 16: TYRX ZKEV GOVCR
+Solve 15: UZSY ALFW HPWDS
+Solve 14: VATZ BMGX IQXET
+Solve 13: WBUA CNHY JRYFU
+Solve 12: XCVB DOIZ KSZGV
+Solve 11: YDWC EPJA LTAHW
+Solve 10: ZEXD FQKB MUBIX
+Solve 9: AFYE GRLC NVCJY
+Solve 8: BGZF HSMD OWDKZ
+Solve 7: CHAG ITNE PXELA
+Solve 6: DIBH JUOF QYFMB
+Solve 5: EJCI KVPG RZGNC
+Solve 4: FKDJ LWQH SAHOD
+Solve 3: GLEK MXRI TBIPE
+Solve 2: HMFL NYSJ UCJQF
+Solve 1: INGM OZTK VDKRG
+Solve 0: JOHN PAUL WELSH
